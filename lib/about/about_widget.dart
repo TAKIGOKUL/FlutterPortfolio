@@ -424,6 +424,98 @@ class _AboutWidgetState extends State<AboutWidget>
                                                         Align(
                                                           alignment:
                                                               const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: InkWell(
+                                                            splashColor: Colors
+                                                                .transparent,
+                                                            focusColor: Colors
+                                                                .transparent,
+                                                            hoverColor: Colors
+                                                                .transparent,
+                                                            highlightColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            onLongPress:
+                                                                () async {
+                                                              context.pushNamed(
+                                                                'Template',
+                                                                extra: <String,
+                                                                    dynamic>{
+                                                                  kTransitionInfoKey:
+                                                                      const TransitionInfo(
+                                                                    hasTransition:
+                                                                        true,
+                                                                    transitionType:
+                                                                        PageTransitionType
+                                                                            .bottomToTop,
+                                                                  ),
+                                                                },
+                                                              );
+                                                            },
+                                                            child: Row(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              children: [
+                                                                Expanded(
+                                                                  child: Align(
+                                                                    alignment:
+                                                                        const AlignmentDirectional(
+                                                                            -1.0,
+                                                                            0.0),
+                                                                    child:
+                                                                        Padding(
+                                                                      padding:
+                                                                          const EdgeInsets.all(
+                                                                              30.0),
+                                                                      child:
+                                                                          AnimatedContainer(
+                                                                        duration:
+                                                                            const Duration(milliseconds: 100),
+                                                                        curve: Curves
+                                                                            .easeInOutQuint,
+                                                                        width:
+                                                                            400.0,
+                                                                        height:
+                                                                            400.0,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(20.0),
+                                                                          border:
+                                                                              Border.all(
+                                                                            color:
+                                                                                const Color(0xC9F1F2E3),
+                                                                            width:
+                                                                                5.0,
+                                                                          ),
+                                                                        ),
+                                                                        child:
+                                                                            ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/photo_6111443248087156966_w.jpg',
+                                                                            width:
+                                                                                200.0,
+                                                                            height:
+                                                                                200.0,
+                                                                            fit:
+                                                                                BoxFit.cover,
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
                                                                   1.0, 0.0),
                                                           child: Container(
                                                             width: 700.0,

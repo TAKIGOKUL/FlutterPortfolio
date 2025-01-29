@@ -190,7 +190,8 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                         iconPadding:
                                             const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: const Color(0xFFF9FAF6),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBackground,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -222,7 +223,8 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                       iconPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: const Color(0xFFF9FAF6),
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryBackground,
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -248,7 +250,8 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                     iconAlignment: IconAlignment.end,
                                     iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: const Color(0xFFF9FAF6),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -273,7 +276,8 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                     iconAlignment: IconAlignment.end,
                                     iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: const Color(0xFFF9FAF6),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -304,7 +308,8 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                         iconPadding:
                                             const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: const Color(0xFFF9FAF6),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -420,65 +425,92 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                                           alignment:
                                                               const AlignmentDirectional(
                                                                   0.0, 0.0),
-                                                          child: Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            children: [
-                                                              Expanded(
-                                                                child: Align(
-                                                                  alignment:
-                                                                      const AlignmentDirectional(
-                                                                          -1.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      Padding(
-                                                                    padding:
-                                                                        const EdgeInsets.all(
-                                                                            50.0),
+                                                          child: InkWell(
+                                                            splashColor: Colors
+                                                                .transparent,
+                                                            focusColor: Colors
+                                                                .transparent,
+                                                            hoverColor: Colors
+                                                                .transparent,
+                                                            highlightColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            onLongPress:
+                                                                () async {
+                                                              context.pushNamed(
+                                                                'About',
+                                                                extra: <String,
+                                                                    dynamic>{
+                                                                  kTransitionInfoKey:
+                                                                      const TransitionInfo(
+                                                                    hasTransition:
+                                                                        true,
+                                                                    transitionType:
+                                                                        PageTransitionType
+                                                                            .bottomToTop,
+                                                                  ),
+                                                                },
+                                                              );
+                                                            },
+                                                            child: Row(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              children: [
+                                                                Expanded(
+                                                                  child: Align(
+                                                                    alignment:
+                                                                        const AlignmentDirectional(
+                                                                            -1.0,
+                                                                            0.0),
                                                                     child:
-                                                                        AnimatedContainer(
-                                                                      duration: const Duration(
-                                                                          milliseconds:
-                                                                              100),
-                                                                      curve: Curves
-                                                                          .easeInOutQuint,
-                                                                      width:
-                                                                          400.0,
-                                                                      height:
-                                                                          400.0,
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(20.0),
-                                                                        border:
-                                                                            Border.all(
-                                                                          color:
-                                                                              const Color(0xC9F1F2E3),
-                                                                          width:
-                                                                              5.0,
-                                                                        ),
-                                                                      ),
+                                                                        Padding(
+                                                                      padding:
+                                                                          const EdgeInsets.all(
+                                                                              30.0),
                                                                       child:
-                                                                          ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/photo_6111443248087156966_w.jpg',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
-                                                                          fit: BoxFit
-                                                                              .cover,
+                                                                          AnimatedContainer(
+                                                                        duration:
+                                                                            const Duration(milliseconds: 100),
+                                                                        curve: Curves
+                                                                            .easeInOutQuint,
+                                                                        width:
+                                                                            400.0,
+                                                                        height:
+                                                                            400.0,
+                                                                        decoration:
+                                                                            BoxDecoration(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(20.0),
+                                                                          border:
+                                                                              Border.all(
+                                                                            color:
+                                                                                const Color(0xC9F1F2E3),
+                                                                            width:
+                                                                                5.0,
+                                                                          ),
+                                                                        ),
+                                                                        child:
+                                                                            ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                          child:
+                                                                              Image.asset(
+                                                                            'assets/images/photo_6111443248087156966_w.jpg',
+                                                                            width:
+                                                                                200.0,
+                                                                            height:
+                                                                                200.0,
+                                                                            fit:
+                                                                                BoxFit.cover,
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ),
-                                                            ],
+                                                              ],
+                                                            ),
                                                           ),
                                                         ),
                                                         Align(
@@ -728,7 +760,7 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                                                         border:
                                                                             Border.all(
                                                                           color:
-                                                                              const Color(0xFFF1F2E3),
+                                                                              const Color(0xE1F1F2E3),
                                                                           width:
                                                                               5.0,
                                                                         ),
@@ -739,7 +771,7 @@ class _TemplateWidgetState extends State<TemplateWidget>
                                                                             BorderRadius.circular(8.0),
                                                                         child: Image
                                                                             .asset(
-                                                                          'assets/images/photo_6111443248087156933_x-removebg-preview.png',
+                                                                          'assets/images/b0913831-03dd-4948-8042-6d07d9302c50.jpeg',
                                                                           width:
                                                                               200.0,
                                                                           height:
