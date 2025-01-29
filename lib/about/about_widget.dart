@@ -190,7 +190,8 @@ class _AboutWidgetState extends State<AboutWidget>
                                         iconPadding:
                                             const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: const Color(0xE6F9FAF6),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBackground,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -222,7 +223,8 @@ class _AboutWidgetState extends State<AboutWidget>
                                       iconPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: const Color(0xE5F9FAF6),
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryBackground,
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -248,7 +250,8 @@ class _AboutWidgetState extends State<AboutWidget>
                                     iconAlignment: IconAlignment.end,
                                     iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: const Color(0xE5F9FAF6),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -273,7 +276,8 @@ class _AboutWidgetState extends State<AboutWidget>
                                     iconAlignment: IconAlignment.end,
                                     iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: const Color(0xE6F9FAF6),
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -304,7 +308,8 @@ class _AboutWidgetState extends State<AboutWidget>
                                         iconPadding:
                                             const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: const Color(0xE5F9FAF6),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -416,71 +421,6 @@ class _AboutWidgetState extends State<AboutWidget>
                                                         ).animateOnPageLoad(
                                                             animationsMap[
                                                                 'stackOnPageLoadAnimation1']!),
-                                                        Align(
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            children: [
-                                                              Expanded(
-                                                                child: Align(
-                                                                  alignment:
-                                                                      const AlignmentDirectional(
-                                                                          -1.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      Padding(
-                                                                    padding:
-                                                                        const EdgeInsets.all(
-                                                                            50.0),
-                                                                    child:
-                                                                        AnimatedContainer(
-                                                                      duration: const Duration(
-                                                                          milliseconds:
-                                                                              100),
-                                                                      curve: Curves
-                                                                          .easeInOutQuint,
-                                                                      width:
-                                                                          400.0,
-                                                                      height:
-                                                                          400.0,
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(20.0),
-                                                                        border:
-                                                                            Border.all(
-                                                                          color:
-                                                                              const Color(0xC9F1F2E3),
-                                                                          width:
-                                                                              5.0,
-                                                                        ),
-                                                                      ),
-                                                                      child:
-                                                                          ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .asset(
-                                                                          'assets/images/photo_6111443248087156966_w.jpg',
-                                                                          width:
-                                                                              200.0,
-                                                                          height:
-                                                                              200.0,
-                                                                          fit: BoxFit
-                                                                              .cover,
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
                                                         Align(
                                                           alignment:
                                                               const AlignmentDirectional(
@@ -739,7 +679,7 @@ class _AboutWidgetState extends State<AboutWidget>
                                                                             BorderRadius.circular(8.0),
                                                                         child: Image
                                                                             .asset(
-                                                                          'assets/images/photo_6111443248087156933_x-removebg-preview.png',
+                                                                          'assets/images/b0913831-03dd-4948-8042-6d07d9302c50.jpeg',
                                                                           width:
                                                                               200.0,
                                                                           height:
